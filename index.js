@@ -16,6 +16,10 @@ const ui = new Ui({
       "example": "my_group",
       "enum": ["Brasília", "São Paulo", "Belo Horizonte"]
     },
+    "isTrues": {
+      "type": "boolean",
+      "description": "Name of the group"
+    },
     "parentId": {
       "type": "string",
       "format": "uuid",
@@ -68,8 +72,7 @@ const ui = new Ui({
 
 async function main () {
   const results = await ui.getValues()
-
-  console.log(results)
+  console.log(JSON.stringify(results, null, 2))
 }
 
 main()
