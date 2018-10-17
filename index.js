@@ -16,6 +16,14 @@ const ui = new Ui({
       "example": "my_group",
       "enum": ["Brasília", "São Paulo", "Belo Horizonte"]
     },
+    "secret_pass": {
+      "type": "string",
+      "format": "password"
+    },
+    "someBytes": {
+      "type": "string",
+      "format": "byte"
+    },
     "isTrues": {
       "type": "boolean",
       "description": "Name of the group"
