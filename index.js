@@ -10,21 +10,23 @@ const ui = new Ui({
     "name": {
       "type": "string",
       "minLength": 1,
-      "maxLength": 64,
-      "pattern": "^(?!\\s*$).+",
+      "maxLength": 5,
+      "nullable": true,
+      "pattern": "^asd$",
       "description": "Name of the group",
       "example": "my_group",
-      "enum": ["Brasília", "São Paulo", "Belo Horizonte"]
+      // "enum": ["bsb", "sp", "bh"]
     },
     "secret_pass": {
       "type": "string",
-      "format": "password"
+      "format": "password",
+      "minLength": 3
     },
     "someBytes": {
       "type": "string",
       "format": "byte"
     },
-    "isTrues": {
+    "a_nice_boolean_property": {
       "type": "boolean",
       "description": "Name of the group"
     },
