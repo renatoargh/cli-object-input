@@ -9,8 +9,16 @@ const ui = new Ui({
   "items": {
   type: 'array',
   items: {
-    type: 'string',
-    maxLength: 3
+    type: 'object',
+    properties: {
+        nome: {
+            type: 'string',
+            maxLength: 3
+        },
+        idade: {
+            type: 'number'
+        },
+    }
   }
     // "name": {
     //   "type": "string",
