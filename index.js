@@ -18,6 +18,19 @@ const ui = new Ui({
         idade: {
             type: 'number'
         },
+        endereco: {
+            type: 'object',
+            properties: {
+                logradouro: {
+                    type: 'string',
+                    minLength: 5
+                },
+                numero: {
+                    type: 'string',
+                    minLength: 1
+                }
+            }
+        }
     }
   }
     // "name": {
