@@ -1,18 +1,17 @@
 const Ui = require('./lib/ui')
 
 const ui = new Ui({
-  "type": "object",
+  "type": "array",
   // "required": [
   //   "name",
   //   "parentId"
   // ],
-  "properties": {
-    "age": {
-      type: 'number',
-      minimum: 5,
-      maximum: 20,
-      multipleOf: 2
-    }
+  "items": {
+  type: 'array',
+  items: {
+    type: 'string',
+    maxLength: 3
+  }
     // "name": {
     //   "type": "string",
     //   "minLength": 1,
