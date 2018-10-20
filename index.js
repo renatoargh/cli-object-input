@@ -13,7 +13,6 @@ const ui = new Ui({
     properties: {
         nome: {
             type: 'string',
-            maxLength: 3,
             nullable: true
         },
         idade: {
@@ -24,13 +23,15 @@ const ui = new Ui({
             properties: {
                 logradouro: {
                     type: 'string',
-                    minLength: 5
                 },
                 numero: {
                     type: 'string',
-                    minLength: 1
                 }
             }
+        },
+        eCabuloso: {
+            type: "boolean",
+            nullable: true
         }
     }
   }
