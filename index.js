@@ -13,7 +13,8 @@ const ui = new Ui({
     properties: {
         nome: {
             type: 'string',
-            maxLength: 3
+            maxLength: 3,
+            nullable: true
         },
         idade: {
             type: 'number'
