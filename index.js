@@ -2,6 +2,8 @@ const Ui = require('./lib/ui')
 
 const ui = new Ui({
   "type": "array",
+  "minItems": 2,
+  "maxItems": 3,
   "items": {
     "type": "object",
     properties: {
@@ -10,10 +12,9 @@ const ui = new Ui({
           "minLength": 1,
           "maxLength": 5,
           "nullable": true,
-          "pattern": "^sp$",
           "description": "Name of the group",
           "example": "my_group",
-          "enum": ["bsb", "sp", "bh"]
+          "default": "Wopa"
         },
         // "secret_pass": {
         //   "type": "string",
