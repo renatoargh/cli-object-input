@@ -6,6 +6,7 @@ const ui = new Ui({
   "maxItems": 3,
   "items": {
     "type": "object",
+    "required": ["name", "sbrubbles"],
     properties: {
         "name": {
           "type": "string",
